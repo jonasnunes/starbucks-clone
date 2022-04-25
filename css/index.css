@@ -3,6 +3,64 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+  margin-right: 2rem;
+}
+.header-nav ul li a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+}
+.header-nav ul li a:hover {
+  color: #008248;
+}
+.header-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-div a {
+  color: #000;
+  font-weight: 700;
+}
+.header-div-button1 {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.header-div-button2 {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -6,3 +6,51 @@
     padding: 0
     box-sizing: border-box
     list-style: none
+    text-decoration: none
+
+body
+    font-family: variables.$fonte-principal
+
+.header
+    display: flex
+    justify-content: space-between
+    padding: 2rem
+
+    &-nav
+        display: flex
+        align-items: center
+        gap: 3rem
+        
+        ul
+            display: flex
+
+            li
+                margin-right: 2rem
+
+                a
+                    text-transform: uppercase
+                    color: #000
+                    font-weight: 700
+                
+                a:hover 
+                    color: variables.$link-hover
+    
+    &-div
+        display: flex
+        align-items: center
+        gap: 2rem
+
+        a
+            color: #000
+            font-weight: 700
+
+        &-button1
+            border: 1px solid #000
+            background-color: #fff
+            @include mixins.buttons
+        
+        &-button2
+            border: none
+            background-color: #000
+            color: #fff
+            @include mixins.buttons
