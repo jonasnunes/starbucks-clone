@@ -85,3 +85,34 @@ body
         
         a:hover 
             box-shadow: 1px 2px 4px #00000070
+
+    &-section2 
+        display: flex
+        align-items: center
+        background-color: variables.$bg-section
+
+        &-div1 
+            background-image: url(../assets/sb-dia-do-fotografo.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            height: 500px
+            width: 50%
+
+        &-div2
+            text-align: center
+            display: flex
+            flex-direction: column 
+            gap: 2rem
+            line-height: 2
+            padding: 2rem 5rem
+            width: 50%
+
+            h2, p 
+                color: variables.$color-section
+                font-weight: 700
+
+            a 
+                @include mixins.botao
+            
+            a:hover 
+                box-shadow: 1px 2px 4px #00000070
