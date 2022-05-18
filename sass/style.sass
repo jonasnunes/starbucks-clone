@@ -60,3 +60,28 @@ body
     background-size: cover
     background-position: center center
     height: 400px
+
+.main
+    width: 90%
+    margin: auto
+
+    &-section1 
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        line-height: 2
+        text-align: center
+        align-items: center
+        background-color: variables.$bg-section
+        margin: 2rem 0
+        padding: 2rem
+
+        p 
+            color: variables.$color-section
+            font-weight: 700
+        
+        a 
+            @include mixins.botao
+        
+        a:hover 
+            box-shadow: 1px 2px 4px #00000070
