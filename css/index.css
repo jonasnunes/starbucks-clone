@@ -71,6 +71,8 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: auto;
 }
@@ -145,6 +147,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #d4e9e2;
+  margin-bottom: 2rem;
 }
 .main-section3-div1 {
   text-align: center;
@@ -178,6 +181,58 @@ body {
   background-repeat: no-repeat;
   height: 300px;
   width: 50%;
+}
+
+.links {
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 3rem 12rem;
+  margin-bottom: 2rem;
+}
+.links dl {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.links dt {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.links dd a {
+  color: #707070;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.links a:hover {
+  color: #000;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-div1, .footer-div2 {
+  display: flex;
+  gap: 1rem;
+}
+.footer-div2 a {
+  color: #000;
+  transition: 0.4s;
+  font-weight: 700;
+}
+.footer-div2 a:hover {
+  color: #707070;
+}
+.footer p {
+  font-weight: 700;
+  color: #707070;
 }
 
 /*# sourceMappingURL=index.css.map */

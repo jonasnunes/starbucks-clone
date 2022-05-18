@@ -62,6 +62,8 @@ body
     height: 400px
 
 .main
+    display: flex
+    flex-direction: column
     width: 90%
     margin: auto
 
@@ -112,6 +114,7 @@ body
 
     &-section3 
         @include mixins.sections
+        margin-bottom: 2rem
 
         &-div1 
             @include mixins.container
@@ -132,3 +135,54 @@ body
             background-repeat: no-repeat
             height: 300px
             width: 50%
+
+.links
+    border-top: 1px solid #000
+    display: flex
+    justify-content: space-around
+    align-items: start
+    padding: 3rem 12rem
+    margin-bottom: 2rem
+
+    dl
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+    dt 
+        font-size: 1.2rem
+        font-weight: 700
+
+    dd a
+        color: variables.$footer-link-lista
+        font-weight: 400
+        transition: .4s
+
+    a:hover 
+        color: #000
+
+.footer
+    border-top: 1px solid #000
+    padding: 3rem
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    justify-content: center
+    align-items: center
+
+    &-div1, &-div2  
+        display: flex
+        gap: 1rem
+    
+    &-div2 
+        a
+            color: #000
+            transition: .4s
+            font-weight: 700
+        
+        a:hover 
+            color: variables.$footer-link-lista
+    
+    p
+        font-weight: 700
+        color: variables.$footer-link-lista
