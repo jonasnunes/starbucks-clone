@@ -8,15 +8,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 1250px;
-  margin: auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 @media (max-width: 1018px) {
   .header {
@@ -103,7 +101,7 @@ body {
   background-image: url(../assets/banner_2437495195_desktop.jpg);
   background-size: cover;
   background-position: center center;
-  height: 40vh;
+  height: 60vh;
 }
 @media (max-width: 1118px) {
   .logo-desktop {
@@ -128,6 +126,12 @@ body {
     background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
+  }
+}
+@media (max-width: 1327px) {
+  .logo-desktop {
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
