@@ -111,10 +111,9 @@ body {
 @media (max-width: 890px) {
   .logo-desktop {
     background-image: url(../assets/banner_2437495195_desktop.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    height: 25vh;
+    height: 40vh;
     width: 100%;
   }
 }
