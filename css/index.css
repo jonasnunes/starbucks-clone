@@ -117,6 +117,11 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .logo-desktop {
+    height: 28vh;
+  }
+}
 @media (max-width: 563px) {
   .logo-desktop {
     background-image: url(../assets/responsivo.jpg);
