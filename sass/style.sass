@@ -10,22 +10,42 @@
 
 body
     font-family: variables.$fonte-principal
+    max-width: 1250px
+    margin: auto
 
 .header
     display: flex
     justify-content: space-between
-    padding: 2rem
+    align-items: center
+    padding: 2rem 0
+
+    @include mixins.quebra3 
+        display: flex
+        flex-direction: column
 
     &-nav
         display: flex
         align-items: center
         gap: 3rem
+
+        @include mixins.quebra3 
+            flex-direction: column
+            gap: 1rem
         
         ul
             display: flex
 
+            @include mixins.quebra3 
+                flex-direction: column
+                align-items: center
+                gap: 1rem
+                margin-bottom: 1rem
+
             li
                 margin-right: 2rem
+
+                @include mixins.quebra3 
+                    margin-right: 0
 
                 a
                     text-transform: uppercase
@@ -40,6 +60,11 @@ body
         display: flex
         align-items: center
         gap: 2rem
+
+        @include mixins.quebra3 
+            flex-direction: column
+            align-items: center
+            gap: 1rem
 
         a
             color: #000
@@ -60,13 +85,35 @@ body
     background-image: url(../assets/banner_2437495195_desktop.jpg)
     background-size: cover
     background-position: center center
-    height: 400px
+    height: 40vh
+
+    @include mixins.quebra2 
+        width: 100%
+
+    @include mixins.quebra5 
+        background-image: url(../assets/banner_2437495195_desktop.jpg)
+        background-size: contain
+        background-position: center center
+        background-repeat: no-repeat
+        height: 25vh
+        width: 100%
+
+    @include mixins.quebra7 
+        background-image: url(../assets/responsivo.jpg)
+        background-size: contain
+        background-position: center center
+        background-repeat: no-repeat
+        height: 50vh
+        width: 100%
 
 .main
     display: flex
     flex-direction: column
     width: 90%
     margin: auto
+
+    @include mixins.quebra8 
+        width: 100%
 
     &-section1 
         display: flex
@@ -96,9 +143,16 @@ body
         &-div1 
             background-image: url(../assets/sb-dia-do-fotografo.jpg)
             background-size: cover
+            background-position: center
             background-repeat: no-repeat
-            height: 500px
+            height: 31.25rem
             width: 50%
+
+            @include mixins.quebra1 
+                height: 40rem
+
+            @include mixins.quebra4 
+                display: none
 
         &-div2
             @include mixins.container
@@ -112,6 +166,9 @@ body
             
             a:hover 
                 box-shadow: 1px 2px 4px #00000070
+
+            @include mixins.quebra4 
+                width: 100%
 
     &-section3 
         @include mixins.sections
@@ -130,12 +187,21 @@ body
             a:hover 
                 box-shadow: 1px 2px 4px #00000070
 
+            @include mixins.quebra6 
+                width: 100%
+
         &-div2 
             background-image: url(../assets/featured-drinks.jpg)
             background-size: cover
             background-repeat: no-repeat
-            height: 300px
+            height: 18.75rem
             width: 50%
+
+            @include mixins.quebra5 
+                height: 21rem
+            
+            @include mixins.quebra6 
+                display: none
 
 .links
     border-top: 1px solid #000
@@ -145,10 +211,23 @@ body
     padding: 3rem 12rem
     margin-bottom: 2rem
 
+    @include mixins.quebra4 
+        padding: 3rem 5rem
+
+    @include mixins.quebra5 
+        padding: 2rem 3rem
+
+    @include mixins.quebra7 
+        display: block
+        text-align: center
+
     dl
         display: flex
         flex-direction: column
         gap: 2rem
+
+        @include mixins.quebra7 
+            margin-bottom: 1rem
 
     dt 
         font-size: 1.2rem
@@ -183,6 +262,9 @@ body
         
         a:hover 
             color: variables.$footer-link-lista
+        
+        @include mixins.quebra8 
+            display: block
     
     p
         font-weight: 700
