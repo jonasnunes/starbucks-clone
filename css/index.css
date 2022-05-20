@@ -119,7 +119,10 @@ body {
 }
 @media (max-width: 768px) {
   .logo-desktop {
-    height: 28vh;
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    width: 100%;
   }
 }
 @media (max-width: 563px) {
