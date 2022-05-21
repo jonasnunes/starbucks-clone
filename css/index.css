@@ -101,17 +101,18 @@ body {
   background-image: url(../assets/banner_2437495195_desktop.jpg);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 400px;
   width: 100%;
 }
 @media (max-width: 1118px) {
   .logo-desktop {
+    height: 330px;
     width: 100%;
   }
 }
 @media (max-width: 1018px) {
   .logo-desktop {
-    height: 100vh;
+    height: 300px;
     width: 100%;
   }
 }
@@ -119,7 +120,7 @@ body {
   .logo-desktop {
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 260px;
     width: 100%;
   }
 }
@@ -127,7 +128,7 @@ body {
   .logo-desktop {
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 230px;
     width: 100%;
   }
 }
@@ -137,7 +138,7 @@ body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 340px;
     width: 100%;
   }
 }
