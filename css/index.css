@@ -308,7 +308,7 @@ body {
 }
 @media (max-width: 890px) {
   .links {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
   }
 }
 @media (max-width: 563px) {
