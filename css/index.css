@@ -10,6 +10,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.body-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1.8rem;
+}
+@media (min-width: 1018px) {
+  .body-nav {
+    display: none;
+  }
+}
+.body-nav .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #1e3932;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -18,8 +36,7 @@ body {
 }
 @media (max-width: 1018px) {
   .header {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 }
 .header-nav {
