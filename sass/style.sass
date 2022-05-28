@@ -15,43 +15,6 @@ html, body
 body
     font-family: variables.$fonte-principal
 
-    .scroll
-        background-color: #d4e9e2
-        width: 100vw
-
-    // NAVIGATION 
-    .body-nav
-        display: flex
-        justify-content: space-between
-        align-items: center
-
-        @include mixins.sumirMenu
-            display: none
-
-        .wrapper
-            display: flex
-            justify-content: space-between
-            align-items: center
-            padding-inline: 2.4rem
-            color: variables.$color-section
-
-            div
-                display: flex
-                align-items: center
-                gap: 1rem
-
-            button
-                background: none
-                border: none
-                cursor: pointer
-
-        .menu
-            ul
-                display: flex
-                flex-direction: column
-                align-items: center
-                gap: 1rem
-
 .header
     display: flex
     justify-content: space-between
@@ -59,7 +22,8 @@ body
     padding: 2rem
 
     @include mixins.quebra3 
-        display: none
+        display: flex
+        flex-direction: column
 
     &-nav
         display: flex
