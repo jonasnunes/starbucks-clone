@@ -67,3 +67,71 @@
 @mixin quebra8
     @media(max-width: 387px)
         @content
+    
+// MENU RESPONSIVO
+
+@mixin menu-responsivo 
+        #menu
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 2rem
+            position: absolute
+            width: 100%
+            top: 70px
+            right: 0px
+            background: variables.$bg-section
+            transition: .6s
+            z-index: 1000
+            height: 0px
+            visibility: hidden
+            overflow-y: hidden
+
+        #nav.active #menu
+            height: calc(100vh - 70px)
+            visibility: visible
+            overflow-y: auto
+
+        #menu a
+            margin: 0 1rem
+            border-bottom: 2px solid rgba(0, 0, 0, .05)
+            color: variables.$color-section
+            font-size: 1.8rem
+
+        #btn-mobile
+            display: flex
+            padding: .5rem 1rem
+            font-size: 1rem
+            border: none
+            background: none
+            cursor: pointer
+            gap: .5rem
+
+        #hamburger
+            border-top: 2px solid
+            width: 20px
+
+        #hamburger::after , #hamburger::before
+            content: ''
+            display: block
+            width: 20px
+            height: 2px
+            background: currentColor
+            margin-top: 5px
+            transition: .3s
+            position: relative
+
+        #nav.active #hamburger 
+            border-top-color: transparent
+
+        #nav.active #hamburger::before
+            transform: rotate(135deg)
+
+        #nav.active #hamburger::after
+            transform: rotate(-135deg)
+            top:-7px
+
+@mixin quebra-menu 
+    @media(min-width: 1018px)
+        @content

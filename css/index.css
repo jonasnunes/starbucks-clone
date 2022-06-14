@@ -15,6 +15,81 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#menu-responsivo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #d4e9e2;
+  margin-bottom: -2%;
+}
+#menu-responsivo #menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0px;
+  background: #d4e9e2;
+  transition: 0.6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+#menu-responsivo #nav.active #menu {
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#menu-responsivo #menu a {
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  color: #1e3932;
+  font-size: 1.8rem;
+}
+#menu-responsivo #btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+#menu-responsivo #hamburger {
+  border-top: 2px solid;
+  width: 20px;
+}
+#menu-responsivo #hamburger::after, #menu-responsivo #hamburger::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+#menu-responsivo #nav.active #hamburger {
+  border-top-color: transparent;
+}
+#menu-responsivo #nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+#menu-responsivo #nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+@media (min-width: 1018px) {
+  #menu-responsivo {
+    display: none;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,8 +98,7 @@ body {
 }
 @media (max-width: 1018px) {
   .header {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 }
 .header-nav {
@@ -108,6 +182,7 @@ body {
   background-position: center center;
   height: 400px;
   width: 100%;
+  margin-top: 2%;
 }
 @media (max-width: 1118px) {
   .logo-desktop {
@@ -119,6 +194,12 @@ body {
   .logo-desktop {
     height: 300px;
     width: 100%;
+    margin-top: -1%;
+  }
+}
+@media (max-width: 978px) {
+  .logo-desktop {
+    margin-top: -2%;
   }
 }
 @media (max-width: 890px) {
@@ -135,6 +216,7 @@ body {
     background-position: center center;
     height: 230px;
     width: 100%;
+    margin-top: 0;
   }
 }
 @media (max-width: 563px) {
@@ -145,6 +227,7 @@ body {
     background-repeat: no-repeat;
     height: 340px;
     width: 100%;
+    margin-top: 2%;
   }
 }
 @media (max-width: 1327px) {

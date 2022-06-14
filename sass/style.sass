@@ -15,6 +15,18 @@ html, body
 body
     font-family: variables.$fonte-principal
 
+#menu-responsivo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem 2rem
+    background-color: variables.$bg-section
+    margin-bottom: -2%
+
+    @include mixins.menu-responsivo
+    @include mixins.quebra-menu
+        display: none
+
 .header
     display: flex
     justify-content: space-between
@@ -22,8 +34,7 @@ body
     padding: 2rem
 
     @include mixins.quebra3 
-        display: flex
-        flex-direction: column
+        display: none
 
     &-nav
         display: flex
@@ -89,6 +100,7 @@ body
     background-position: center center
     height: 400px
     width: 100%
+    margin-top: 2%
 
     @include mixins.quebra2 
         height: 330px
@@ -97,6 +109,10 @@ body
     @include mixins.quebra3 
         height: 300px
         width: 100%
+        margin-top: -1%
+
+    @include mixins.quebra4 
+        margin-top: -2%
 
     @include mixins.quebra5 
         background-size: cover
@@ -109,6 +125,7 @@ body
         background-position: center center
         height: 230px
         width: 100%
+        margin-top: 0
 
     @include mixins.quebra7 
         background-image: url(../assets/responsivo.jpg)
@@ -117,6 +134,7 @@ body
         background-repeat: no-repeat
         height: 340px
         width: 100%
+        margin-top: 2%
 
     @include mixins.logo-desktop-responsivo
         background-size: contain
