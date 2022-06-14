@@ -1,7 +1,7 @@
 <h1 align="center">Recriação da página do Starbucks</h1>
 
 <h3>Tecnologias usadas:</h3>
-<p>HTML | CSS | SASS</p>
+<p>HTML | CSS | SASS | JS</p>
 
 <h3>Objetivo do Projeto</h3>
 <p>Praticar o conhecimento nas tecnologias usadas no projeto</p>
