@@ -19,9 +19,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   padding: 1rem 2rem;
   background-color: #d4e9e2;
-  margin-bottom: -2%;
 }
 #menu-responsivo #menu {
   display: flex;
@@ -182,7 +184,6 @@ body {
   background-position: center center;
   height: 400px;
   width: 100%;
-  margin-top: 2%;
 }
 @media (max-width: 1118px) {
   .logo-desktop {
@@ -194,12 +195,7 @@ body {
   .logo-desktop {
     height: 300px;
     width: 100%;
-    margin-top: -1%;
-  }
-}
-@media (max-width: 978px) {
-  .logo-desktop {
-    margin-top: -2%;
+    margin-top: 8%;
   }
 }
 @media (max-width: 890px) {
@@ -216,7 +212,7 @@ body {
     background-position: center center;
     height: 230px;
     width: 100%;
-    margin-top: 0;
+    margin-top: 10%;
   }
 }
 @media (max-width: 563px) {
@@ -227,7 +223,6 @@ body {
     background-repeat: no-repeat;
     height: 340px;
     width: 100%;
-    margin-top: 2%;
   }
 }
 @media (max-width: 1327px) {

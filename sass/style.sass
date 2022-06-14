@@ -19,9 +19,11 @@ body
     display: flex
     justify-content: space-between
     align-items: center
+    position: fixed
+    top: 0
+    width: 100vw
     padding: 1rem 2rem
     background-color: variables.$bg-section
-    margin-bottom: -2%
 
     @include mixins.menu-responsivo
     @include mixins.quebra-menu
@@ -100,7 +102,6 @@ body
     background-position: center center
     height: 400px
     width: 100%
-    margin-top: 2%
 
     @include mixins.quebra2 
         height: 330px
@@ -109,10 +110,7 @@ body
     @include mixins.quebra3 
         height: 300px
         width: 100%
-        margin-top: -1%
-
-    @include mixins.quebra4 
-        margin-top: -2%
+        margin-top: 8%
 
     @include mixins.quebra5 
         background-size: cover
@@ -125,7 +123,7 @@ body
         background-position: center center
         height: 230px
         width: 100%
-        margin-top: 0
+        margin-top: 10%
 
     @include mixins.quebra7 
         background-image: url(../assets/responsivo.jpg)
@@ -134,7 +132,6 @@ body
         background-repeat: no-repeat
         height: 340px
         width: 100%
-        margin-top: 2%
 
     @include mixins.logo-desktop-responsivo
         background-size: contain
