@@ -480,10 +480,16 @@ body {
 }
 
 #botaoTopo {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 100;
   right: 0;
-  margin: 0.5rem;
+  width: 50px;
+}
+#botaoTopo a img {
+  transition: 0.8s;
+}
+#botaoTopo a img:hover {
+  width: 40px;
 }
 
 /*# sourceMappingURL=index.css.map */

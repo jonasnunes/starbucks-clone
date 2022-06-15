@@ -21,7 +21,7 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 function onScroll(){
 
     if(scrollY > 0){
-        menuResponsivo.classList.add('scroll')      
+        menuResponsivo.classList.add('scroll')   
     } else{
         menuResponsivo.classList.remove('scroll')
     }
