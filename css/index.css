@@ -449,6 +449,7 @@ body {
 }
 
 .footer {
+  position: relative;
   border-top: 1px solid #000;
   padding: 3rem;
   display: flex;
@@ -481,7 +482,7 @@ body {
 
 #botaoTopo {
   position: absolute;
-  bottom: 100;
+  bottom: 14%;
   right: 0;
   width: 50px;
 }
