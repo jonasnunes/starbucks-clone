@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -15,7 +19,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#menu-responsivo {
+#menuResponsivo.scroll {
+  background-color: #1e3932;
+}
+#menuResponsivo.scroll #nav #btn-mobile {
+  color: #fff;
+}
+#menuResponsivo.scroll #nav #menu {
+  background-color: #1e3932;
+}
+#menuResponsivo.scroll #nav #menu a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#menuResponsivo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +43,7 @@ body {
   padding: 1rem 2rem;
   background-color: #d4e9e2;
 }
-#menu-responsivo #menu {
+#menuResponsivo #menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,18 +60,18 @@ body {
   visibility: hidden;
   overflow-y: hidden;
 }
-#menu-responsivo #nav.active #menu {
+#menuResponsivo #nav.active #menu {
   height: calc(100vh - 70px);
   visibility: visible;
   overflow-y: auto;
 }
-#menu-responsivo #menu a {
+#menuResponsivo #menu a {
   margin: 0 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   color: #1e3932;
   font-size: 1.8rem;
 }
-#menu-responsivo #btn-mobile {
+#menuResponsivo #btn-mobile {
   display: flex;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -62,11 +80,11 @@ body {
   cursor: pointer;
   gap: 0.5rem;
 }
-#menu-responsivo #hamburger {
+#menuResponsivo #hamburger {
   border-top: 2px solid;
   width: 20px;
 }
-#menu-responsivo #hamburger::after, #menu-responsivo #hamburger::before {
+#menuResponsivo #hamburger::after, #menuResponsivo #hamburger::before {
   content: "";
   display: block;
   width: 20px;
@@ -76,18 +94,18 @@ body {
   transition: 0.3s;
   position: relative;
 }
-#menu-responsivo #nav.active #hamburger {
+#menuResponsivo #nav.active #hamburger {
   border-top-color: transparent;
 }
-#menu-responsivo #nav.active #hamburger::before {
+#menuResponsivo #nav.active #hamburger::before {
   transform: rotate(135deg);
 }
-#menu-responsivo #nav.active #hamburger::after {
+#menuResponsivo #nav.active #hamburger::after {
   transform: rotate(-135deg);
   top: -7px;
 }
 @media (min-width: 1018px) {
-  #menu-responsivo {
+  #menuResponsivo {
     display: none;
   }
 }
