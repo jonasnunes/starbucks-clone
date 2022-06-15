@@ -479,4 +479,11 @@ body {
   color: #707070;
 }
 
+#botaoTopo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+
 /*# sourceMappingURL=index.css.map */
